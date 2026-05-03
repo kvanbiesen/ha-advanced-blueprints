@@ -662,14 +662,14 @@ blueprint:
             you need to input 1 here.
 
             "
-          default: 1
+          default: "1"
           selector:
-            number:
-              min: 1.0
-              max: 3.0
-              step: 1.0
-              unit_of_measurement: phases
-              mode: slider
+            select:
+              options:
+                - label: "1-Phase"
+                  value: "1"
+                - label: "3-Phases"
+                  value: "3"
         defined_current:
           name: Appliance typical current draw
           description:
